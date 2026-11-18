@@ -1,0 +1,127 @@
+/* iPad & Laptop (< 1024px) */
+@media (max-width: 1024px) {
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-grid,
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-section__grid,
+  .detail-hero__grid,
+  .auth-page__grid,
+  .admin-dashboard-grid,
+  .enrollment-tables-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-shell {
+    grid-template-columns: 76px 1fr;
+
+    .admin-sidebar .brand-logo__text,
+    .admin-nav__link span {
+      display: none;
+    }
+  }
+}
+
+/* Tablet / iPad Portrait & Mobile (< 768px) */
+@media (max-width: 768px) {
+  .nav-category,
+  .header-search,
+  .auth-btn-group {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .form-grid,
+  .profile-info-grid,
+  .outcomes-grid,
+  .enrollment-hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enrollment-select-bar__controls {
+    grid-template-columns: 1fr;
+  }
+
+  .enrolled-course-row {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__img {
+      width: 100%;
+      height: 160px;
+    }
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .admin-header {
+    padding: 0 1rem;
+
+    &__title {
+      font-size: 0.95rem;
+    }
+  }
+
+  .admin-content {
+    padding: 1rem;
+  }
+}
+
+/* iPhone (< 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .course-grid,
+  .category-grid,
+  .features-grid,
+  .admin-kpi-grid,
+  .hero-stat-grid,
+  .demo-login-box__actions,
+  .mobile-drawer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0.65rem;
+
+    &__icon {
+      display: none;
+    }
+  }
+
+  .user-chip__info {
+    display: none;
+  }
+}
